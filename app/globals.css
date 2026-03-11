@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #e8e6e1;
+  --color-foreground: #1a1d20;
+  --color-primary: #c27041;      /* Warm Cedar Wood */
+  --color-stone: #1a1d20;        /* Dark Stone / Wall */
+  --color-stone-light: #5a5f68;  /* Secondary Text */
+  --font-sans: var(--font-montserrat), var(--font-inter), sans-serif;
+  --font-heading: var(--font-montserrat), sans-serif;
+}
+
+:root {
+  --background: #e8e6e1;
+  --foreground: #1a1d20;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar for a cleaner look */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* Base styles for the canvas */
+canvas {
+  display: block;
+  max-width: 100%;
+}
