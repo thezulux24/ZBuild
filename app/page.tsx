@@ -34,12 +34,12 @@ export default function Home() {
       <div id="process" ref={containerRef} className="h-[300vh] w-full relative flex flex-col md:flex-row">
 
         {/* Left Side: Text Content (Sticky) */}
-        <div className="w-full md:w-5/12 lg:w-4/12 h-[50vh] md:h-screen sticky top-0 flex flex-col justify-center px-8 md:px-16 lg:px-24 z-20 pointer-events-none pb-12 md:pb-0">
+        <div className="w-full md:w-5/12 lg:w-4/12 h-[50vh] md:h-screen sticky top-0 flex flex-col justify-center px-8 md:px-16 lg:px-24 z-20 pointer-events-none pt-24 pb-8 md:pt-0 md:pb-0">
 
           <div className="relative w-full h-[60vh] md:h-[40vh]">
             {/* Phase 01 Introduction */}
             <motion.div
-              className="absolute inset-0 flex flex-col justify-center pointer-events-auto"
+              className="absolute inset-0 flex flex-col justify-center pointer-events-auto will-change-transform will-change-opacity"
               style={{ opacity: opacity1, y: y1 }}
             >
               <div className="mb-6 inline-flex items-center gap-3">
@@ -60,7 +60,7 @@ export default function Home() {
 
             {/* Phase 02 Disassembly */}
             <motion.div
-              className="absolute inset-0 flex flex-col justify-center pointer-events-auto"
+              className="absolute inset-0 flex flex-col justify-center pointer-events-auto will-change-transform will-change-opacity"
               style={{ opacity: opacity2, y: y2 }}
             >
               <div className="mb-6 inline-flex items-center gap-3">
@@ -77,7 +77,7 @@ export default function Home() {
 
             {/* Phase 03 Exploded View */}
             <motion.div
-              className="absolute inset-0 flex flex-col justify-center pointer-events-auto"
+              className="absolute inset-0 flex flex-col justify-center pointer-events-auto will-change-transform will-change-opacity"
               style={{ opacity: opacity3, y: y3 }}
             >
               <div className="mb-6 inline-flex items-center gap-3">

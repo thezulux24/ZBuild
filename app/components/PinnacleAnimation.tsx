@@ -46,7 +46,7 @@ export default function PinnacleAnimation() {
         
         {/* Full screen Image Background */}
         <motion.div
-          className="absolute inset-0 w-full h-full"
+          className="absolute inset-0 w-full h-full will-change-transform will-change-opacity"
           style={{
             scale: bgScale,
             rotateX: bgRotateX,
@@ -72,7 +72,7 @@ export default function PinnacleAnimation() {
         <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 w-full max-w-6xl pointer-events-none">
           
           <motion.div 
-            className="inline-flex items-center gap-3 mb-6 md:mb-10"
+            className="inline-flex items-center gap-3 mb-6 md:mb-10 will-change-transform will-change-opacity"
             style={{ opacity: overlineOpacity, y: overlineY }}
           >
             <span className="w-10 h-[2px] bg-[#c27041]"></span>
@@ -81,9 +81,9 @@ export default function PinnacleAnimation() {
           </motion.div>
 
           {/* 3D text part */}
-          <h2 className="text-5xl sm:text-7xl md:text-[8rem] lg:text-[10rem] font-heading font-bold leading-[0.9] uppercase flex flex-col items-center pointer-events-auto">
+          <h2 className="text-[9vw] sm:text-6xl md:text-[7rem] lg:text-[9rem] font-heading font-bold leading-[0.9] uppercase flex flex-col items-center pointer-events-auto">
              <motion.span 
-               className="text-white block drop-shadow-2xl"
+               className="text-white block drop-shadow-2xl will-change-transform will-change-opacity"
                style={{ 
                  rotateX: word1RotateX, 
                  y: word1Y, 
@@ -95,7 +95,7 @@ export default function PinnacleAnimation() {
              </motion.span>
              
              <motion.span 
-               className="text-transparent bg-clip-text bg-gradient-to-r from-[#c27041] to-[#f3bd99] block mt-1 md:mt-4 drop-shadow-lg p-2"
+               className="text-transparent bg-clip-text bg-gradient-to-r from-[#c27041] to-[#f3bd99] block mt-1 md:mt-4 drop-shadow-lg p-2 will-change-transform will-change-opacity"
                style={{ 
                  rotateX: word2RotateX, 
                  y: word2Y, 
@@ -108,7 +108,7 @@ export default function PinnacleAnimation() {
           </h2>
 
           <motion.p 
-            className="mt-8 md:mt-12 text-[#e8e6e1] font-medium leading-relaxed max-w-2xl text-sm sm:text-base md:text-xl drop-shadow-xl"
+            className="mt-8 md:mt-12 text-[#e8e6e1] font-medium leading-relaxed max-w-2xl text-sm sm:text-base md:text-xl drop-shadow-xl will-change-transform will-change-opacity"
             style={{ opacity: paragraphOpacity, y: paragraphY }}
           >
             Every component locks perfectly into place, creating an unbreakable bond. Our luxury homes are not just built; they are precisely assembled to stand the test of time, reflecting both elegance and structural superiority.
